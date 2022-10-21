@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="text_username">User Name</string>
+    <string name="text_password">PassWord</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="text_login">Login</string>
+    <string name="user">Pablo</string>
+    <string name="intro">Introduction</string>
+    <string name="body_text">You can make your own To-do lists </string>
+    <string name="errorpassword">invalid password</string>
+    <string name="erroruser">Invalid user</string>
+    <string name="btnLogin">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

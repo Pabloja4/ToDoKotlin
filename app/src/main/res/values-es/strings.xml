@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App</string>
+    <string name="text_username">Nombre de usuario</string>
+    <string name="text_password">Contraseña</string>
+    <string name="text_welcome">Bienvenido/a</string>
+    <string name="text_login">Login</string>
+    <string name="user">Pablo</string>
+    <string name="intro">Introducción</string>
+    <string name="body_text">text text text text text text text text text </string>
+    <string name="errorpassword">Contraseña incorrecta</string>
+    <string name="erroruser">Usuario incorrecto</string>
+    <string name="btnLogin">Conectar</string>
+</resources>
