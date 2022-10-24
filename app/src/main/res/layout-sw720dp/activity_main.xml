@@ -23,18 +23,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="40dp"
         >
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:src="@drawable/ucaldas" />
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:src="@drawable/logo_mision" />
 
 
@@ -52,21 +52,25 @@
             android:layout_height="wrap_content"
             android:text= "@string/text_username"
             android:textColor="@color/black"
-            android:textSize="25sp"/>
+            android:textSize="65sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edtUsername"
             android:hint="email@domain.com"
-            android:layout_marginTop="25dp"/>
 
+            android:textSize="65sp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             app:endIconMode="password_toggle"
-            android:textSize="20sp">
+            android:textSize="60sp">
         
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -74,7 +78,7 @@
                 android:id="@+id/edtPasswordAuthentication"
                 android:hint="@string/text_password"
                 android:inputType="textPassword"
-                android:textSize="20sp"/>
+                android:textSize="60sp"/>
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -83,16 +87,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/idbtn"
             android:text="@string/btnLogin"
-            android:textSize="25sp"
+            android:textSize="65sp"
             android:onClick="onLogin"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnRegister"
-            android:text="@string/btnRegister"
-            android:textSize="25sp"
-            android:onClick="onRegister"/>
 
 </LinearLayout>
 

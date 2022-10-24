@@ -23,11 +23,37 @@ class ToDoFragment : Fragment(){
         val btnDetail3: Button=fragmento.findViewById(R.id.btn_detail_3)
         btnDetail1.setOnClickListener(View.OnClickListener {
             val datos = Bundle()
-            datos.putString("Task", "Go to de grocety store")
-            datos.putString("Time", "10:00am")
-            datos.putString("Place", "D1")
+            datos.putString("tarea", "Go to the grocery store")
+            datos.putString("hora", "10:00am")
+            datos.putString("lugar", "D1")
+            activity?.getSupportFragmentManager()?.beginTransaction()?.setReorderingAllowed(true)
+                ?.replace(R.id.fcvToDo,DetailFragment::class.java,datos,"detail")
+                ?.addToBackStack("")
+                ?.commit()
 
-            activiy?.getSupportFragmentManager()
+        })
+
+        btnDetail2.setOnClickListener(View.OnClickListener {
+            val datos = Bundle()
+            datos.putString("tarea", "Buy potatoes")
+            datos.putString("hora", "11:00am")
+            datos.putString("lugar", "Exito")
+            activity?.getSupportFragmentManager()?.beginTransaction()?.setReorderingAllowed(true)
+                ?.replace(R.id.fcvToDo,DetailFragment::class.java,datos,"detail")
+                ?.addToBackStack("")
+                ?.commit()
+
+        })
+
+        btnDetail3.setOnClickListener(View.OnClickListener {
+            val datos = Bundle()
+            datos.putString("tarea", "Buy vegetables")
+            datos.putString("hora", "9:00am")
+            datos.putString("lugar", "Olimpica")
+            activity?.getSupportFragmentManager()?.beginTransaction()?.setReorderingAllowed(true)
+                ?.replace(R.id.fcvToDo,DetailFragment::class.java,datos,"detail")
+                ?.addToBackStack("")
+                ?.commit()
 
         })
         return fragmento

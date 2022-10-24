@@ -4,38 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:titleTextColor="@color/black"
-        android:background="@color/Green_dark"
-        android:elevation="4dp"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        />
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         android:layout_margin="10dp"
         >
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/ucaldas" />
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:src="@drawable/ucaldas"
+            android:layout_margin="30dp"/>
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/logo_mision" />
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:src="@drawable/logo_mision"
+            android:layout_margin="30dp"/>
 
 
     </LinearLayout>
@@ -52,21 +44,24 @@
             android:layout_height="wrap_content"
             android:text= "@string/text_username"
             android:textColor="@color/black"
-            android:textSize="25sp"/>
+            android:textSize="65sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edtUsername"
             android:hint="email@domain.com"
-            android:layout_marginTop="25dp"/>
+            android:textSize="65sp"/>
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             app:endIconMode="password_toggle"
-            android:textSize="20sp">
+            android:textSize="50sp">
         
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -74,7 +69,7 @@
                 android:id="@+id/edtPasswordAuthentication"
                 android:hint="@string/text_password"
                 android:inputType="textPassword"
-                android:textSize="20sp"/>
+                android:textSize="50sp"/>
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -83,16 +78,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/idbtn"
             android:text="@string/btnLogin"
-            android:textSize="25sp"
+            android:textSize="55sp"
             android:onClick="onLogin"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnRegister"
-            android:text="@string/btnRegister"
-            android:textSize="25sp"
-            android:onClick="onRegister"/>
 
 </LinearLayout>
 

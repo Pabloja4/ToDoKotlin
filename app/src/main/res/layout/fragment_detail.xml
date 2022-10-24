@@ -10,7 +10,7 @@
    <ImageView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:src="@mipmap/ic_launcher_round"/>
+       android:src="@drawable/shop"/>
     
     <TextView
         android:id="@+id/tvtarea"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
-        android:text="Task"/>
+        android:text="Tarea"/>
     <TextView
         android:id="@+id/tvhora"
         android:layout_width="wrap_content"

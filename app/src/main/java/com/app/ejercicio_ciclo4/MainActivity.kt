@@ -68,6 +68,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+        fun onRegister(view: View){
+            val intent= Intent(this,RegisterActivity::class.java)
+            startActivity(intent)
+        }
 
 
 }

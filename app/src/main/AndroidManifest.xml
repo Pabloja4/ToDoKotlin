@@ -13,23 +13,33 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".ToDoActivity"
-            android:exported="false">
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Ejercicio_ciclo4.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <!-- android:theme="@style/Theme.Ejercicio_ciclo4" -->
+        <activity
+            android:name=".ToDoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Ejercicio_ciclo4.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- android:theme="@style/Theme.Ejercicio_ciclo4" -->
         <activity
             android:name=".WelcomeActivity"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.Ejercicio_ciclo4.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Ejercicio_ciclo4.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

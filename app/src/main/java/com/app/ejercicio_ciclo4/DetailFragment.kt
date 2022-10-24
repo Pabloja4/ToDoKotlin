@@ -18,13 +18,16 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val fragmento= inflater.inflate(R.layout.fragment_detail, container, false)
-        val tarea= requireArguments().getString("Task")
-        val hora= requireArguments().getString("Time")
-        val lugar= requireArguments().getString("place")
+        var tarea= requireArguments().getString("tarea")
+        var hora= requireArguments().getString("hora")
+        var lugar= requireArguments().getString("lugar")
         var tvTarea : TextView=fragmento.findViewById(R.id.tvtarea)
         var tvHora : TextView=fragmento.findViewById(R.id.tvhora)
-        var tvTLugar : TextView=fragmento.findViewById(R.id.tvlugar)
-        tvTarea.text
+        var tvLugar : TextView=fragmento.findViewById(R.id.tvlugar)
+        tvTarea.text=tarea
+        tvHora.text=hora
+        tvLugar.text=lugar
+
         return fragmento
     }
 }
