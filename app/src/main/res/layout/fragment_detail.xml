@@ -13,25 +13,46 @@
        android:src="@drawable/shop"/>
     
     <TextView
-        android:id="@+id/tvtarea"
+        android:id="@+id/tvTarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:text="Tarea"/>
     <TextView
-        android:id="@+id/tvhora"
+        android:id="@+id/tvHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:text="Hora"/>
     <TextView
-        android:id="@+id/tvlugar"
+        android:id="@+id/tvLugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:text="Lugar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bnbUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onUpdate"
+        android:text="@string/btnDBUpdate"/>
+    <Button
+        android:id="@+id/bnbdelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDelete"
+        android:text="@string/btnDBdelete"/>
+
+</LinearLayout>
 
 </LinearLayout>

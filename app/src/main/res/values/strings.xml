@@ -20,4 +20,8 @@
     <string name="email">Email</string>
     <string name="phone">Phone number</string>
     <string name="privacy">Privacy policy</string>
+    <string name="btnDBSave">Save</string>
+    <string name="btnDBUpdate">Update</string>
+    <string name="btnDBdelete">Delete</string>
+    <string name="btnRegisterWGoogle">Register with Google</string>
 </resources>

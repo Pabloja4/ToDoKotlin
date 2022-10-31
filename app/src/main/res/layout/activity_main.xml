@@ -23,19 +23,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="30dp"
         >
 
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/ucaldas" />
+            android:src="@drawable/shopping_car" />
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/logo_mision" />
+<!--        <ImageView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/logo_mision" />-->
 
 
     </LinearLayout>
@@ -91,6 +91,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnRegister"
             android:text="@string/btnRegister"
+            android:textSize="25sp"
+            android:onClick="onRegister"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegisterGoogle"
+            android:text="@string/btnRegisterWGoogle"
             android:textSize="25sp"
             android:onClick="onRegister"/>
 

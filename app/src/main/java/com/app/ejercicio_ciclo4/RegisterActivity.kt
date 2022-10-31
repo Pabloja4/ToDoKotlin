@@ -1,8 +1,10 @@
 package com.app.ejercicio_ciclo4
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Patterns
 import android.view.View
 import android.widget.CheckBox
 import android.widget.EditText
@@ -19,9 +21,10 @@ class RegisterActivity : AppCompatActivity() {
     private var chBpolicies: CheckBox?=null
     private val text_Pattern : Pattern= Pattern.compile("[a-z A-Z]*")
     private val pasword_Pattern : Pattern= Pattern.compile("^" + "(?=.*[0-9])"+".{8,}"+"$")
-    private val email_Pattern : Pattern= Pattern.compile("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}\$")
+    private val email_Pattern : Pattern= Patterns.EMAIL_ADDRESS
     private val document_Pattern : Pattern= Pattern.compile("^[1-9]\\d*\$")
     private val phone_Pattern : Pattern= Pattern.compile("\\(?\\d+\\)?[-.\\s]?\\d+[-.\\s]?\\d+")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -38,12 +41,13 @@ class RegisterActivity : AppCompatActivity() {
     fun onRegister(view: View){
         if(validarformulario())
         {
-            Toast.makeText(this, "successful registration", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Successful registration", Toast.LENGTH_LONG).show()
         }else
         {
-            Toast.makeText(this, "Error", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Registration Error", Toast.LENGTH_LONG).show()
         }
     }
+
     private fun validarformulario():Boolean{
         var validate=true
         val nameInput=edName!!.text.toString()
@@ -61,7 +65,7 @@ class RegisterActivity : AppCompatActivity() {
 
         //        Name validation
 
-            if(TextUtils.isEmpty(edName!!.text.toString()))
+        if(TextUtils.isEmpty(edName!!.text.toString()))
             {
                 edName!!.error="Required"
                 validate=false
@@ -85,32 +89,32 @@ class RegisterActivity : AppCompatActivity() {
             validate=false
         }else edLast!!.error=null
 
-        //        Document validation
+        // Document validation
 
         if(TextUtils.isEmpty(edDocument!!.text.toString()))
         {
             edDocument!!.error="Required"
             validate=false
-        }else if(!text_Pattern.matcher(documentInput).matches())
+        }else if(!document_Pattern.matcher(documentInput).matches())
 
         {
             edDocument!!.error="Invalid document"
             validate=false
         }else edDocument!!.error=null
 
-//        Password validation
+        //        Password validation
 
             if(TextUtils.isEmpty(edPass!!.text.toString()))
             {
                 edPass!!.error="Required"
                 validate=false
-            }else if(!document_Pattern.matcher(passInput).matches())
+            }else if(!pasword_Pattern.matcher(passInput).matches())
 
             {
-                edDocument!!.error="Invalid Pasword"
+                edPass!!.error="Invalid Pasword"
                 validate=false
 
-            }else edDocument!!.error=null
+            }else edPass!!.error=null
 
 
         //        Phone validation

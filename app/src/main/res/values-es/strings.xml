@@ -19,4 +19,8 @@
     <string name="email">Email</string>
     <string name="phone">Numero de telefono</string>
     <string name="privacy">Acepto las políticas de privacidad</string>
+    <string name="btnDBSave">Guardar</string>
+    <string name="btnDBUpdate">Editar</string>
+    <string name="btnDBdelete">Borrar</string>
+    <string name="btnRegisterWGoogle">Registrate con Google</string>
 </resources>
