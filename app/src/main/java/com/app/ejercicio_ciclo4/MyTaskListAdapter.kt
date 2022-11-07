@@ -20,6 +20,7 @@ class MyTaskListAdapter(context: AppCompatActivity,
     var myTaskTimes: ArrayList<String> = info.getStringArrayList("times") as ArrayList<String>
     var myTaskPlaces: ArrayList<String> = info.getStringArrayList("places") as ArrayList<String>
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layout = LayoutInflater.from(parent.context).inflate(R.layout.task_list_items, parent, false)
 
@@ -37,6 +38,8 @@ class MyTaskListAdapter(context: AppCompatActivity,
         holder.layout.setOnClickListener {
             Toast.makeText(holder.itemView.context, textViewTask.text, Toast.LENGTH_LONG).show()
             val datos = Bundle()
+
+
             datos.putString("tarea", textViewTask.text as String)
             datos.putString("hora", textViewTime.text as String)
             datos.putString("lugar", myTaskPlaces[position])

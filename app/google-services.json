@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "827502884612",
+    "project_id": "todolist-77e93",
+    "storage_bucket": "todolist-77e93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827502884612:android:7e550f5c38ec8cd3a20251",
+        "android_client_info": {
+          "package_name": "com.app.ejercicio_ciclo4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827502884612-nhjgqm4goovps3agv7743uauuoef6cp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.ejercicio_ciclo4",
+            "certificate_hash": "9f3141e15d435b9f93bdedd373320af97758a794"
+          }
+        },
+        {
+          "client_id": "827502884612-g3lujmtd4qles8g8col8frhha42dkml8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhmLkJO4IY7wZdq0Ni5sSa4BqSBebbz10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827502884612-g3lujmtd4qles8g8col8frhha42dkml8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

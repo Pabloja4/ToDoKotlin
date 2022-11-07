@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/authLayout"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -28,8 +29,8 @@
         >
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="73dp"
+            android:layout_height="76dp"
             android:src="@drawable/shopping_car" />
 
 <!--        <ImageView-->
@@ -63,18 +64,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/black"
-            app:endIconMode="password_toggle"
-            android:textSize="20sp">
-        
+            android:textSize="25sp"
+            app:endIconMode="password_toggle">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/edtPasswordAuthentication"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
                 android:hint="@string/text_password"
                 android:inputType="textPassword"
-                android:textSize="20sp"/>
+                android:textSize="25sp" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -83,7 +84,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/idbtn"
             android:text="@string/btnLogin"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:onClick="onLogin"/>
 
         <Button
@@ -91,17 +92,51 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnRegister"
             android:text="@string/btnRegister"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:onClick="onRegister"/>
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegisterEmail"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRegisterEmail"
+                android:text="@string/btnRegisterWEmail"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnLoginEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onLoginEmail"
+                android:text="@string/btnLoginWEmail"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnRegisterGoogle"
-            android:text="@string/btnRegisterWGoogle"
-            android:textSize="25sp"
-            android:onClick="onRegister"/>
+            android:hint="I forgot the password"
+            android:layout_gravity="end"/>
+
+<com.google.android.gms.common.SignInButton
+    android:id="@+id/btnGoogle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
 
 </LinearLayout>
+
+
 
 </LinearLayout>

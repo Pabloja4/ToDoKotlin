@@ -30,15 +30,21 @@ class NewTaskActivity : AppCompatActivity() {
         var place: String = editTextPlace.text.toString()
         val db = ToDoDatabase.getDatabase(this)
         val toDoDao = db.todoDao()
+
         val task = ToDo(0, title, time, place)
+
 
         runBlocking {
             launch {
-                var result = toDoDao.insertTask(task)
-                if(result!= -1L){
-                    setResult(Activity.RESULT_OK)
-                    finish()
-                }
+
+
+
+                    var result = toDoDao.insertTask(task)
+                    if(result!= -1L){
+                        setResult(Activity.RESULT_OK)
+                        finish()
+                    }
+
 
             }
         }

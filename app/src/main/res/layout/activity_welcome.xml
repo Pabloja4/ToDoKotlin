@@ -44,6 +44,7 @@
             android:layout_margin="10dp"
             >
             <TextView
+                android:id="@+id/textprovider"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"
@@ -53,12 +54,21 @@
             </TextView>
 
             <TextView
+                android:id="@+id/textemail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"
                 android:text="@string/user">
 
+
             </TextView>
+
+            <Button
+                android:id="@+id/btnlogoout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onLogOut"
+                android:text="Log out"/>
         </LinearLayout>
 
     </LinearLayout>

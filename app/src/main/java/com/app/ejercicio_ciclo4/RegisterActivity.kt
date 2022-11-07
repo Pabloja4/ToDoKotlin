@@ -20,7 +20,7 @@ class RegisterActivity : AppCompatActivity() {
     private var edPass: EditText?=null
     private var chBpolicies: CheckBox?=null
     private val text_Pattern : Pattern= Pattern.compile("[a-z A-Z]*")
-    private val pasword_Pattern : Pattern= Pattern.compile("^" + "(?=.*[0-9])"+".{8,}"+"$")
+    private val pasword_Pattern : Pattern= Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@\$!%*#?&])[A-Za-z\\d@\$!%*#?&]{8,}\$")
     private val email_Pattern : Pattern= Patterns.EMAIL_ADDRESS
     private val document_Pattern : Pattern= Pattern.compile("^[1-9]\\d*\$")
     private val phone_Pattern : Pattern= Pattern.compile("\\(?\\d+\\)?[-.\\s]?\\d+[-.\\s]?\\d+")

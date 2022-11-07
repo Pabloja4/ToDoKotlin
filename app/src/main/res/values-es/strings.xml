@@ -23,4 +23,7 @@
     <string name="btnDBUpdate">Editar</string>
     <string name="btnDBdelete">Borrar</string>
     <string name="btnRegisterWGoogle">Registrate con Google</string>
+    <string name="btnLoginWEmail">Login con Email</string>
+    <string name="btnRegisterWEmail">Registrar con Email</string>
+    <string name="prefs_file">com.app.ejercicio_ciclo4.PREFERENCE_FILE_KEY</string>
 </resources>
